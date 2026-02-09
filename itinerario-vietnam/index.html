@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Itinerario</title>
+
+  <!-- Fuentes Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    body { margin:0; padding:24px; background: transparent; }
+    .acordeon-container {
+      font-family: 'Noto Serif', serif;
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .acordeon-item {
+      background: #f4ebe0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      margin-bottom: 15px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid #615039;
+    }
+
+    .acordeon-titulo {
+      background: #f4ebe0;
+      color: #615039;
+      padding: 18px 20px;
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      gap: 12px;
+    }
+
+    .acordeon-titulo:hover {
+      background: #d16f48;
+      color: #f4ebe0;
+    }
+
+    .chevron-icon {
+      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      flex: 0 0 auto;
+    }
+
+    .acordeon-item.activo .chevron-icon {
+      transform: rotate(180deg);
+    }
+
+    .acordeon-item.activo .chevron-icon path {
+      fill: #f4ebe0 !important;
+    }
+
+    .acordeon-contenido {
+      background: #f4ebe0;
+      color: #333;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      display: none;
+      line-height: 1.6;
+    }
+
+    .acordeon-item.activo .acordeon-contenido {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="acordeon-container">
+    <!-- Día 1 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 1: Llegada a Vietnam – Primeras sensaciones en Hanói
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Bienvenidos a Vietnam.
+        A vuestra llegada al aeropuerto internacional de Hanói, os estará esperando vuestro conductor para trasladaros cómodamente al hotel. Tras el check-in, tendréis tiempo para descansar o dar un primer paseo por los alrededores, una primera toma de contacto con la energía vibrante de la ciudad.
+        Os alojaréis en el Pearl Hotel, un hotel bien situado y confortable, perfecto para empezar a descubrir la capital vietnamita con calma. Os compartiremos nuestras recomendaciones para empezar a disfrutar de la ciudad desde el primer momento.
+        <br>&nbsp;<b>Alojamiento: Pearl Hotel, Hanói.</b>
+      </div>
+    </div>
+
+    <!-- Día 2 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 2 Hanói: historia, tradiciones y vida local
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Después del desayuno, comenzaréis a explorar la capital vietnamita, una ciudad que combina historia milenaria y vida contemporánea de una forma muy natural.
+        Visitaréis el Templo de la Literatura, la primera universidad de Vietnam, y continuaréis hacia la plaza Ba Dinh para ver el exterior del Mausoleo de Ho Chi Minh, así como la cercana Pagoda de Un Solo Pilar, uno de los símbolos de la ciudad.
+        Tras el almuerzo en un restaurante local, la tarde os llevará al templo Ngoc Son, situado en una pequeña isla del lago Hoan Kiem.
+        Para cerrar el día, disfrutaréis de un paseo en ciclo pousse por el barrio antiguo, recorriendo las famosas 36 calles, donde la vida local se vive de forma intensa y auténtica.
+        <br>&nbsp;<b>Alojamiento: Pearl Hotel, Hanói.</b>
+      </div>
+    </div>
+
+    <!-- Día 3 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 3 - Aventura en la naturaleza
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Caminata por senderos naturales, avistamiento de fauna y picnic al aire libre.
+      </div>
+    </div>
+
+    <!-- Día 4 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 4 - Taller local y gastronomía
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Participación en un taller artesanal con habitantes locales y cena típica en grupo.
+      </div>
+    </div>
+
+    <!-- Día 5 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 5 - Día libre o excursión opcional
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Tiempo libre para explorar por cuenta propia o apuntarse a una excursión alternativa.
+      </div>
+    </div>
+
+    <!-- Día 6 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 6 - Exploración de playas
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Día completo en la costa: relajación, actividades acuáticas y atardecer en la playa.
+      </div>
+    </div>
+
+    <!-- Día 7 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 7 - Recorrido cultural final
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Visita a monumentos emblemáticos y última cena grupal con intercambio de experiencias.
+      </div>
+    </div>
+
+    <!-- Día 8 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 8 - Despedida y regreso
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Desayuno, tiempo libre según vuelos y traslado al aeropuerto para regreso.
+      </div>
+    </div>
+
+    <!-- Día 9 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 9 - Recorrido cultural final
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Visita a monumentos emblemáticos y última cena grupal con intercambio de experiencias.
+      </div>
+    </div>
+
+    <!-- Día 10 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 10 - Recorrido cultural final
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Visita a monumentos emblemáticos y última cena grupal con intercambio de experiencias.
+      </div>
+    </div>
+
+    <!-- Día 11 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 11 - Recorrido cultural final
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Visita a monumentos emblemáticos y última cena grupal con intercambio de experiencias.
+      </div>
+    </div>
+
+    <!-- Día 12 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 12 - Recorrido cultural final
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Visita a monumentos emblemáticos y última cena grupal con intercambio de experiencias.
+      </div>
+    </div>
+
+    <!-- Día 13 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 13 - Recorrido cultural final
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Visita a monumentos emblemáticos y última cena grupal con intercambio de experiencias.
+      </div>
+    </div>
+
+    <!-- Día 14 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 14 - Recorrido cultural final
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Visita a monumentos emblemáticos y última cena grupal con intercambio de experiencias.
+      </div>
+    </div>
+
+    <!-- Día 15 -->
+    <div class="acordeon-item">
+      <div class="acordeon-titulo">
+        Día 15 - Recorrido cultural final
+        <i class="chevron-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="#615039" d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+          </svg>
+        </i>
+      </div>
+      <div class="acordeon-contenido">
+        Visita a monumentos emblemáticos y última cena grupal con intercambio de experiencias.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const acordeonItems = document.querySelectorAll('.acordeon-item');
+    acordeonItems.forEach(item => {
+      const titulo = item.querySelector('.acordeon-titulo');
+      titulo.addEventListener('click', () => {
+        item.classList.toggle('activo');
+      });
+    });
+  </script>
+</body>
+</html>
